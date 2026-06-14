@@ -2,7 +2,7 @@
 
 A real-time AC power monitoring system built on an ESP32 microcontroller. Measures live wattage from any AC circuit and displays it on a WiFi-connected web dashboard accessible from any device on the same network.
 
-<img src="sct-clamp.jpg" width="500">
+<img src="sct-clamp.jpg" width="300">
 
 # How it works
 
@@ -27,7 +27,7 @@ SCT-013 output → 10Ω burden resistor → bias circuit midpoint → GPIO34
 Bias circuit: 10kΩ from 3.3V to midpoint, 10kΩ from midpoint to GND, 10µF cap from midpoint to GND
 ZMPT101B: AC input terminals across hot and neutral, VCC → 3.3V, GND → GND, OUT → GPIO35
 
-<img src="breadboard.jpg" width="500">
+<img src="breadboard.jpg" width="300">
 
 # Setup
 
