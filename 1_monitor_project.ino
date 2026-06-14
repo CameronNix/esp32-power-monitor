@@ -5,8 +5,8 @@
 //Print out the watts value via wifi over web browser
 
 //define WiFi and Password
-const char* ssid = "Lindsay";
-const char* password = "Connor12!";
+const char* ssid = "YOUR_SSID";
+const char* password = "YOUR_PASSWORD";
 
 
 //define wifi server
