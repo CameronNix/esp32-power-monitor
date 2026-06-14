@@ -2,13 +2,13 @@
 
 A real-time AC power monitoring system built on an ESP32 microcontroller. Measures live wattage from any AC circuit and displays it on a WiFi-connected web dashboard accessible from any device on the same network.
 
-![SCT-013 clamped around AC wire](sct-clamp.jpg)
+<img src="sct-clamp.jpg" width="500">
 
 # How it works
 
 The SCT-013 current transformer clamps around a single wire and outputs a small AC current proportional to the current flowing through it. A 10Ω burden resistor converts that current to a voltage the ESP32 ADC can read. A bias circuit using two 10kΩ resistors and a 10µF capacitor lifts the signal to the ESP32's safe 0–3.3V range. The ZMPT101B voltage sensor taps across the AC line to measure voltage. Both signals are sampled 1000 times per cycle, RMS math is applied, and the results are multiplied to get watts. The ESP32 serves a live web dashboard over WiFi that updates every second.
 
-![Live web dashboard showing real-time wattage](dashboard.png)
+<img src="dashboard.png" width="500">
 
 # Parts list
 
@@ -27,7 +27,7 @@ SCT-013 output → 10Ω burden resistor → bias circuit midpoint → GPIO34
 Bias circuit: 10kΩ from 3.3V to midpoint, 10kΩ from midpoint to GND, 10µF cap from midpoint to GND
 ZMPT101B: AC input terminals across hot and neutral, VCC → 3.3V, GND → GND, OUT → GPIO35
 
-![Breadboard setup](breadboard.jpg)
+<img src="breadboard.jpg" width="500">
 
 # Setup
 
